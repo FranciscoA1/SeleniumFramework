@@ -1,0 +1,33 @@
+package automation;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import pages.BusquedaPage;
+import pages.ResultadosPage;
+import utilities.BaseTest;
+
+public class ResultadosTests extends BaseTest {
+
+    BusquedaPage busquedaPage = new BusquedaPage();
+    ResultadosPage resultadosPage = new ResultadosPage();
+
+    @BeforeMethod
+    public void setUp() {
+        busquedaPage.waitPageLoad();
+        busquedaPage.buscarCanciones("Metallica");
+        resultadosPage.waitPageLoad();
+    }
+
+
+    @Test(groups = {regression})
+    public void agregarCancionAFavoritos() {
+        resultadosPage.agregarCancionAFavoritos();
+    }
+
+    @Test(groups = {regression})
+    public void validarTotalCanciones() {
+        resultadosPage.validarTotalCanciones();
+    }
+
+
+}
