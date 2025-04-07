@@ -31,7 +31,6 @@ public class BusquedaPage extends BasePage {
     public void buscarSinAgregarBanda(String mensaje) {
         find(buttonBusqueda).click();
         final var alertText = getAlertText();
-        acceptAlert();
         softAssert.assertEquals(alertText, mensaje);
         softAssert.assertAll();
     }

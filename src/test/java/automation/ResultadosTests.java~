@@ -15,7 +15,6 @@ public class ResultadosTests extends BaseTest {
     public void setUp() {
         busquedaPage.waitPageLoad();
         busquedaPage.buscarCanciones("Metallica");
-        resultadosPage.waitPageLoad();
     }
 
 

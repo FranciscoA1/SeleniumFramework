@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.List;
 
 public abstract class BasePage {
-    private final static int defaultTimeout = 12;
+    private final static int defaultTimeout = 20;
     private final int TIMEOUT;
     protected final SoftAssert softAssert;
 

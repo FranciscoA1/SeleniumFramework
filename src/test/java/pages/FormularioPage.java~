@@ -1,0 +1,23 @@
+package pages;
+
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+import utilities.BasePage;
+import utilities.Logs;
+
+public class FormularioPage extends BasePage {
+
+    private final By FormNombre = By.xpath("//*[@id=\"user-name\"]");
+
+    @Step("Verificando la UI de la pagina...")
+    public void verifyPage() {
+        Logs.info("Verificando la UI de la pagina");
+    }
+
+    @Step("Llenar formulario")
+    public void llenarFormulario() {
+        Logs.info("Llenar formulario");
+
+    }
+}

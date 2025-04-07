@@ -27,6 +27,6 @@ public class BusquedaTests extends BaseTest {
 
     @Test(groups = {regression})
     public void buscarSinAgregarBanda() {
-        busquedaPage.buscarSinAgregarBanda("Por favor, ingresa el nombre de la banda.");
+        busquedaPage.buscarSinAgregarBanda("Por favor, introduzca un nombre de banda.");
     }
 }

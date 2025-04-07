@@ -35,7 +35,6 @@ public class ResultadosPage extends BasePage {
 
         find(buttonAgregarFavorito).click();
 
-        safeSleep(1500);
 
         final var newTotalFavoritas = findAll(listaFavoritos).size();
         Logs.debug("Total de canciones favoritas: %s", newTotalFavoritas);
